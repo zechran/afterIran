@@ -3,44 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AfterIran Wiki — Change Log</title>
-  <style>
-    body { font-family: Georgia, serif; max-width: 860px; margin: 40px auto; padding: 0 20px; color: #222; background: #fafaf8; }
-    h1 { border-bottom: 2px solid #333; padding-bottom: 8px; }
-    a { color: #1a4e8a; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .entry { border-left: 3px solid #c8a96e; padding: 8px 16px; margin: 1em 0; background: #fdf9f4; }
-    .entry .date { font-weight: bold; color: #555; font-size: 0.9em; }
-    .entry ul { margin: 4px 0; padding-left: 1.2em; }
-    footer { margin-top: 3em; font-size: 0.85em; color: #888; border-top: 1px solid #ddd; padding-top: 1em; }
-  </style>
+  <title>Change Log — AfterIran Wiki</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Change Log</h1>
-<p><a href="index.html">← Back to index</a></p>
+<div id="sidebar"></div>
 
-<div class="entry">
-  <div class="date">2026-06-05</div>
-  <ul>
-    <li>Wiki initialized. Created <code>index.html</code> and <code>log.html</code>.</li>
-  </ul>
+<div id="content">
+
+  <h1>Change Log</h1>
+  <div class="meta">Append-only record of all wiki operations.</div>
+
+  <hr>
+
+  <div class="entry" style="border-left:3px solid #c8a96e; padding:8px 16px; margin:1em 0; background:#fdf9f4;">
+    <div style="font-weight:bold; color:#555; font-size:0.9em;">2026-06-05</div>
+    <ul>
+      <li>Restyled wiki with sidebar navigation, shared <code>style.css</code> and <code>nav.js</code>.</li>
+      <li>Ingested <strong>GeoEcon-May2026.pdf</strong> (Geopolitical Futures, May 2026 — "Fallout from the Iran War", 53 pages).</li>
+      <li>Created concept page: <a href="strait-of-hormuz.html">Strait of Hormuz — Energy and Fertilizer Choke Point</a> (Thread 1).</li>
+      <li>Updated <code>index.html</code> with source and concept entries.</li>
+    </ul>
+  </div>
+
+  <div class="entry" style="border-left:3px solid #c8a96e; padding:8px 16px; margin:1em 0; background:#fdf9f4;">
+    <div style="font-weight:bold; color:#555; font-size:0.9em;">2026-06-05 (initial)</div>
+    <ul>
+      <li>Wiki initialized. Repository created at <a href="https://github.com/zechran/afterIran">github.com/zechran/afterIran</a>. GitHub Pages enabled from <code>docs/</code>.</li>
+    </ul>
+  </div>
+
+  <!-- NEW ENTRIES ABOVE THIS LINE -->
+
 </div>
 
-<div class="entry">
-  <div class="date">2026-06-05</div>
-  <ul>
-    <li>Ingested <strong>GeoEcon-May2026.pdf</strong> (Geopolitical Futures, May 2026 — "Fallout from the Iran War", 53 pages).</li>
-    <li>Created concept page: <a href="strait-of-hormuz.html">Strait of Hormuz — Energy and Fertilizer Choke Point</a> (Thread 1).</li>
-    <li>Updated <code>index.html</code> with new concept page entry.</li>
-  </ul>
-</div>
-
-<!-- NEW ENTRIES ABOVE THIS LINE -->
-
-<footer>
-  Maintained by Claude · <a href="index.html">Index</a>
-</footer>
-
+<script src="nav.js"></script>
 </body>
 </html>

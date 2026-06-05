@@ -1,0 +1,198 @@
+/* AfterIran Wiki — shared stylesheet */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background: #fff;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────── */
+#sidebar {
+  width: 220px;
+  min-width: 220px;
+  background: #1e2329;
+  color: #ccc;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+#sidebar .wiki-title {
+  display: block;
+  padding: 16px 16px 14px;
+  font-size: 0.95em;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #2e3540;
+  letter-spacing: 0.01em;
+}
+
+#sidebar .wiki-title:hover { color: #c8a96e; }
+
+#sidebar nav { padding: 8px 0 24px; }
+
+#sidebar .nav-section {
+  margin-top: 12px;
+}
+
+#sidebar .nav-section-title {
+  display: block;
+  padding: 4px 16px;
+  font-size: 0.7em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6a7385;
+}
+
+#sidebar .nav-section a {
+  display: block;
+  padding: 4px 16px 4px 20px;
+  font-size: 0.85em;
+  color: #aab0bc;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#sidebar .nav-section a:hover { color: #fff; background: #2a3040; }
+#sidebar .nav-section a.active { color: #fff; background: #2a3040; border-left: 2px solid #c8a96e; padding-left: 18px; }
+
+/* ── Main content ────────────────────────────────────────── */
+#content {
+  margin-left: 220px;
+  padding: 40px 48px 60px;
+  max-width: 860px;
+  flex: 1;
+}
+
+h1 {
+  font-size: 1.6em;
+  font-weight: 700;
+  margin: 0 0 4px;
+  border-bottom: 2px solid #e0ddd8;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-top: 2em;
+  color: #222;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 4px;
+}
+
+h3 {
+  font-size: 0.97em;
+  font-weight: 700;
+  margin-top: 1.4em;
+  color: #333;
+}
+
+p { margin: 0.7em 0; }
+
+a { color: #1a5fa8; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+hr { border: none; border-top: 1px solid #e5e2dc; margin: 1.5em 0; }
+
+/* Meta block under title */
+.meta {
+  font-size: 0.85em;
+  color: #666;
+  margin: 8px 0 24px;
+}
+.meta strong { color: #444; }
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  margin: 1em 0;
+}
+th {
+  text-align: left;
+  background: #f5f3ef;
+  border-bottom: 2px solid #ddd;
+  padding: 7px 10px;
+  font-weight: 600;
+}
+td {
+  padding: 6px 10px;
+  border-bottom: 1px solid #ece9e3;
+  vertical-align: top;
+}
+tr:hover td { background: #faf8f5; }
+
+/* Blockquote */
+blockquote {
+  border-left: 3px solid #c8a96e;
+  margin: 1em 0;
+  padding: 8px 16px;
+  background: #fdf9f3;
+  color: #444;
+  font-style: italic;
+}
+
+/* Investment box */
+.invest {
+  background: #f3f8ed;
+  border-left: 3px solid #5a8a3a;
+  padding: 14px 18px;
+  margin: 1.5em 0;
+  border-radius: 0 4px 4px 0;
+}
+.invest h3 { color: #3a6a1a; margin-top: 0.6em; }
+.invest h3:first-child { margin-top: 0; }
+
+/* Risk tags */
+.risk-high { color: #c0392b; font-weight: 700; }
+.risk-med  { color: #d68910; font-weight: 700; }
+.risk-low  { color: #27ae60; font-weight: 700; }
+
+/* Tags */
+.tag {
+  font-size: 0.72em;
+  background: #e4edf7;
+  color: #1a5fa8;
+  padding: 2px 7px;
+  border-radius: 3px;
+  margin-right: 4px;
+  white-space: nowrap;
+}
+
+/* Related pages box */
+.related {
+  background: #f7f5f1;
+  border: 1px solid #e5e2dc;
+  padding: 12px 16px;
+  margin-top: 2.5em;
+  border-radius: 4px;
+  font-size: 0.88em;
+}
+.related strong { display: block; margin-bottom: 6px; color: #555; }
+.related a { margin-right: 12px; }
+
+/* Footer */
+footer {
+  margin-top: 3em;
+  padding-top: 1em;
+  border-top: 1px solid #e5e2dc;
+  font-size: 0.82em;
+  color: #999;
+}
+footer a { color: #888; }
