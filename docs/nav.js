@@ -24,7 +24,8 @@
     },
     {
       section: "Analysis & Q&A",
-      links: []
+      links: [
+      ]
     }
   ];
 
