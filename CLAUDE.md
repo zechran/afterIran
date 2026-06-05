@@ -1,7 +1,15 @@
 # LLM Wiki
 
-A personal knowledge base maintained by Claude Code.
+A personal knowledge base maintained by Claude.
 Based on Andrej Karpathy's LLM Wiki pattern.
+
+## GitHub
+
+- **Repository**: https://github.com/zechran/afterIran
+- **Live site**: https://zechran.github.io/afterIran/
+- **Branch**: `main`
+- **Auth**: PAT configured in git remote URL (stored in `.git/config`)
+- Publishing is done via `./publish.sh "message"` — commits all changes and pushes to `main`, which triggers GitHub Pages deployment automatically.
 
 ## Purpose
 
